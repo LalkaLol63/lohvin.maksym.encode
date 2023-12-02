@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class CaesarCipher {
 
-    private ArrayList<Character> alphabet; //алфавіт для кодування
+    private final ArrayList<Character> alphabet; //алфавіт для кодування
 
     public CaesarCipher(ArrayList<Character> alphabet) {
         this.alphabet = alphabet;
@@ -33,7 +33,7 @@ public class CaesarCipher {
     public String decode(String textToDecode, int key) {
         //декодування - це те саме кодування, але ключ береться зі знаком мінус
         //оскільки ми робимо циклічний зсув, то можна створити новий ключ:
-        int newKey = (alphabet.size() - key) % alphabet.size();
+        int newKey = alphabet.size() - (key % alphabet.size());
         return encode(textToDecode,newKey);
     }
 
