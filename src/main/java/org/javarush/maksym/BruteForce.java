@@ -4,7 +4,7 @@ package org.javarush.maksym;
 public class BruteForce {
     private final CaesarCipher caesarCipher;
 
-    private final int SUFFICIENT_NUM_OF_MATCHES = 3;
+    private static final int SUFFICIENT_NUM_OF_MATCHES = 3;
     public BruteForce(CaesarCipher caesarCipher) {
         this.caesarCipher = caesarCipher;
     }
