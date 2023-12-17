@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Alphabet {
-    public static final ArrayList<Character> ALPHABET= new ArrayList<>(List.of(
+    public static final ArrayList<Character> ALPHABET = new ArrayList<>(List.of(
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
             'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',

@@ -3,16 +3,16 @@ package org.javarush.maksym;
 import java.io.IOException;
 import java.nio.file.Path;
 
-public class Runner {
+class Runner {
     private CaesarCipher caesarCipher;
     private BruteForce bruteForce;
 
-    public Runner() {
+    Runner() {
         caesarCipher = new CaesarCipher(Alphabet.ALPHABET);
         bruteForce = new BruteForce(caesarCipher);
     }
 
-    public void run(String[] args) throws IOException{
+    void run(String[] args) throws IOException{
 
         String command = args[0];
         Path src = Path.of(args[1]);
